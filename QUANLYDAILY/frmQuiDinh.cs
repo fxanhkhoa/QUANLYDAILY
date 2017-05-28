@@ -16,5 +16,17 @@ namespace QUANLYDAILY
         {
             InitializeComponent();
         }
+
+        private void update_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MessageBox.Show("Thành Công!");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

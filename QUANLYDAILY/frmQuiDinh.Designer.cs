@@ -111,6 +111,7 @@
             this.update.TabIndex = 8;
             this.update.Text = "Update";
             this.update.UseVisualStyleBackColor = true;
+            this.update.Click += new System.EventHandler(this.update_Click);
             // 
             // frmQuiDinh
             // 
