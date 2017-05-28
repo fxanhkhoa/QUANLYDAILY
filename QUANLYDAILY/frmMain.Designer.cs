@@ -167,8 +167,7 @@
             this.radio_QD.Location = new System.Drawing.Point(565, 150);
             this.radio_QD.Name = "radio_QD";
             this.radio_QD.Size = new System.Drawing.Size(66, 17);
-            this.radio_QD.TabIndex = 18;
-            this.radio_QD.TabStop = true;
+            this.radio_QD.TabIndex = 10;
             this.radio_QD.Text = "Qui Định";
             this.radio_QD.UseVisualStyleBackColor = true;
             this.radio_QD.CheckedChanged += new System.EventHandler(this.radio_QD_CheckedChanged);

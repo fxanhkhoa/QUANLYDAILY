@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace QUANLYDAILY
 {
@@ -31,6 +32,7 @@ namespace QUANLYDAILY
             PXH_radio.Checked = false;
             HS_radio.Checked = false;
             DoanhSo_radio.Checked = false;
+            radio_QD.Checked = false;
 
             HS_radio.Enabled = false;
             PXH_radio.Enabled = false;
@@ -38,10 +40,12 @@ namespace QUANLYDAILY
             Phieuthu.Enabled = false;
             DoanhSo_radio.Enabled = false;
             CongNo_radio.Enabled = false;
+            radio_QD.Enabled = false;
 
             try
             {
-                //conn.Open();
+                //string path = Directory.GetCurrentDirectory();
+                //MessageBox.Show("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\" " + path + "\\QUANLIDAILY.mdf \";Integrated Security=True;Connect Timeout=30");
             }
             catch (Exception ex)
             {
@@ -113,7 +117,7 @@ namespace QUANLYDAILY
 
         private void login_Click(object sender, EventArgs e)
         {
-            if (user.Text == "username")
+            if (user.Text == "user")
                 if (pass.Text == "user")
                 {
                     HS_radio.Enabled = true;
@@ -122,6 +126,7 @@ namespace QUANLYDAILY
                     Phieuthu.Enabled = true;
                     DoanhSo_radio.Enabled = true;
                     CongNo_radio.Enabled = true;
+                    radio_QD.Enabled = true;
                     MessageBox.Show("Thành Công!");
 
                     label1.Visible = false;
