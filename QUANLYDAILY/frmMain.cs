@@ -44,8 +44,8 @@ namespace QUANLYDAILY
 
             try
             {
-                string path = Directory.GetCurrentDirectory();
-                MessageBox.Show("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"" + path + "\\QUANLYDAILY.mdf \";Integrated Security=True;Connect Timeout=30");
+                //string path = Directory.GetCurrentDirectory();
+                //MessageBox.Show("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"" + path + "\\QUANLYDAILY.mdf \";Integrated Security=True;Connect Timeout=30");
                 //MessageBox.Show(path);
             }
             catch (Exception ex)
