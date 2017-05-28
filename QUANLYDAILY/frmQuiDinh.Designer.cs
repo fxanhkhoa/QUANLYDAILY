@@ -130,6 +130,7 @@
             this.Name = "frmQuiDinh";
             this.Text = "frmQuiDinh";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmQuiDinh_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

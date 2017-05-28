@@ -22,7 +22,8 @@ namespace QUANLYDAILY
 
         public void Connect()
         {
-            conn_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\" " + current +"\\QUANLYDAILY.mdf \";Integrated Security=True;Connect Timeout=30";
+            conn_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"" + current + "\\QUANLYDAILY.mdf \";Integrated Security=True;Connect Timeout=30";
+            //conn_string = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Anh Khoa\\documents\\Visual Studio 2015\\Projects\\QUANLYDAILY\\QUANLYDAILY\\bin\\Debug\\QUANLYDAILY.mdf\";Integrated Security=True;Connect Timeout=30";
             conn = new SqlConnection(conn_string);
         }
         public void Open()
