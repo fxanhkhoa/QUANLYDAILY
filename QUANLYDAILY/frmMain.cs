@@ -23,6 +23,7 @@ namespace QUANLYDAILY
         frm_PhieuThuTIen ptt;
         frm_DoanhSo DoS;
         frm_CongNo CN;
+        frmQuiDinh QD;
         //static string connString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\QUANLYDAILY.mdf;Integrated Security=True;Connect Timeout=30";
         //SqlConnection conn = new SqlConnection(connString);
         private void frmMain_Load(object sender, EventArgs e)
@@ -134,6 +135,13 @@ namespace QUANLYDAILY
                 {
                     MessageBox.Show("Sai mật khẩu hoặc tên đăng nhập!");
                 }
+        }
+
+        private void radio_QD_CheckedChanged(object sender, EventArgs e)
+        {
+            QD = new frmQuiDinh();
+            QD.MdiParent = this;
+            QD.Show();
         }
     }
 }

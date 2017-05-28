@@ -40,6 +40,7 @@
             this.Reset = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.radio_QD = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // HS_radio
@@ -160,11 +161,24 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "Password";
             // 
+            // radio_QD
+            // 
+            this.radio_QD.AutoSize = true;
+            this.radio_QD.Location = new System.Drawing.Point(565, 150);
+            this.radio_QD.Name = "radio_QD";
+            this.radio_QD.Size = new System.Drawing.Size(66, 17);
+            this.radio_QD.TabIndex = 18;
+            this.radio_QD.TabStop = true;
+            this.radio_QD.Text = "Qui Định";
+            this.radio_QD.UseVisualStyleBackColor = true;
+            this.radio_QD.CheckedChanged += new System.EventHandler(this.radio_QD_CheckedChanged);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(665, 459);
+            this.Controls.Add(this.radio_QD);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Reset);
@@ -200,6 +214,7 @@
         private System.Windows.Forms.Button Reset;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RadioButton radio_QD;
     }
 }
 
